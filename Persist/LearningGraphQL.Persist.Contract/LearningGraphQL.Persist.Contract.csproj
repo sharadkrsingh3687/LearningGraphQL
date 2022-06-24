@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Collate.NET" Version="1.6.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
   </ItemGroup>
 
