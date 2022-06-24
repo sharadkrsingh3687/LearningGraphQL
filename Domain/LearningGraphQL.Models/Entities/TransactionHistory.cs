@@ -3,7 +3,7 @@
 
 
 
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Record of each purchase order, sales order, or work order transaction year to date.

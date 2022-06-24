@@ -1,5 +1,5 @@
 ﻿
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Street address information for customers, employees, and vendors.

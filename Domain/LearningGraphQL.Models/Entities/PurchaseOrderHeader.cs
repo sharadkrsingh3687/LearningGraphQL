@@ -3,7 +3,7 @@
 
 
 
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// General purchase order information. See PurchaseOrderDetail.

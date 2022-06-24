@@ -1,5 +1,5 @@
 ﻿
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Current version number of the AdventureWorks 2016 sample database. 

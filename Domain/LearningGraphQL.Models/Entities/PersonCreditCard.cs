@@ -3,7 +3,7 @@
 
 
 
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Cross-reference table mapping people to their credit card information in the CreditCard table. 

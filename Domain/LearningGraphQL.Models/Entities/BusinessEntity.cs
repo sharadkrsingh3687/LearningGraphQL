@@ -1,5 +1,5 @@
 ﻿
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Source of the ID that connects vendors, customers, and employees with address and contact information.

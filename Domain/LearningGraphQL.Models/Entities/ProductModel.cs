@@ -3,7 +3,7 @@
 
 
 
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Product model classification.

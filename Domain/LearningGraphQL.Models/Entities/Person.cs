@@ -1,5 +1,5 @@
 ﻿
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Human beings involved with AdventureWorks: employees, customer contacts, and vendor contacts.

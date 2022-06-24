@@ -3,7 +3,7 @@
 
 
 
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Changes in the list price of a product over time.

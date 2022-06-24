@@ -1,5 +1,5 @@
 ﻿
-namespace Learning.GraphQL.Server.Models
+namespace LearningGraphQL.Domain.Models.Entities
 {
     /// <summary>
     /// Lookup table containing the ISO standard codes for countries and regions.
