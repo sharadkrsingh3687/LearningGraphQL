@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LearningGraphQL.Domain.Models.Entities;
 
-namespace Learning.GraphQL.Server.Persist.Contract
+namespace LearningGraphQL.Persist.Contract
 {
     public interface IAdventureWorksDbContext
     {

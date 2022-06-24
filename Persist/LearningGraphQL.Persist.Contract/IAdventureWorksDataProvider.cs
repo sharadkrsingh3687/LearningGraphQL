@@ -1,4 +1,4 @@
-﻿namespace Learning.GraphQL.Server.Persist.Contract
+﻿namespace LearningGraphQL.Persist.Contract
 {
     public interface IAdventureWorksDataProvider
     {

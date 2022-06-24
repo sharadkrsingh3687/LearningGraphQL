@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LearningGraphQL.Persist.Contract\LearningGraphQL.Persist.Contract.csproj" />
+  </ItemGroup>
+
 </Project>
