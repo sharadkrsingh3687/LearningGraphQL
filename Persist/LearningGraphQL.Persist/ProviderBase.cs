@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LearningGraphQL.Persist
 {
@@ -17,9 +12,8 @@ namespace LearningGraphQL.Persist
             this._context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
-        public IQueryable<TT> QueryableQuery<TT>() where TT : class
-        {
-            return this._context.Set<TT>().AsQueryable();
-        }
+        public async Task<IEnumerable<TT>> GetListDataAsync<TT>(CancellationToken cancellationToken) where TT : class
+            => await this._context.Set<TT>().ToListAsync(cancellationToken).ConfigureAwait(false);
+        
     }
 }

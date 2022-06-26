@@ -1,6 +1,74 @@
-﻿namespace LearningGraphQL.Persist.Contract
+﻿using LearningGraphQL.Domain.Models.Entities;
+namespace LearningGraphQL.Persist.Contract
 {
     public interface IAdventureWorksDataProvider
     {
+        Task<IEnumerable<Address>> GetAddresssAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<AddressType>> GetAddressTypesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<AwbuildVersion>> GetAwbuildVersionsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<BillOfMaterials>> GetBillOfMaterialsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<BusinessEntity>> GetBusinessEntitiesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<BusinessEntityAddress>> GetBusinessEntityAddresssAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<BusinessEntityContact>> GetBusinessEntityContactsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ContactType>> GetContactTypesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<CountryRegion>> GetCountryRegionsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<CountryRegionCurrency>> GetCountryRegionCurrenciesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<CreditCard>> GetCreditCardsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Culture>> GetCulturesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Currency>> GetCurrenciesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<CurrencyRate>> GetCurrencyRatesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Customer>> GetCustomersAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Department>> GetDepartmentsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<EmailAddress>> GetEmailAddresssAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Employee>> GetEmployeesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<EmployeeDepartmentHistory>> GetEmployeeDepartmentHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<EmployeePayHistory>> GetEmployeePayHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Illustration>> GetIllustrationsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<JobCandidate>> GetJobCandidatesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Location>> GetLocationsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Password>> GetPasswordsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Person>> GetPersonsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<PersonCreditCard>> GetPersonCreditCardsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<PersonPhone>> GetPersonPhonesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<PhoneNumberType>> GetPhoneNumberTypesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Product>> GetProductsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductCategory>> GetProductCategoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductCostHistory>> GetProductCostHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductDescription>> GetProductDescriptionsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductInventory>> GetProductInventoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductListPriceHistory>> GetProductListPriceHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductModel>> GetProductModelsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductModelIllustration>> GetProductModelIllustrationsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductModelProductDescriptionCulture>> GetProductModelProductDescriptionCulturesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductPhoto>> GetProductPhotosAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductProductPhoto>> GetProductProductPhotosAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductReview>> GetProductReviewsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductSubcategory>> GetProductSubcategorAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ProductVendor>> GetProductVendorsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<PurchaseOrderDetail>> GetPurchaseOrderDetailsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<PurchaseOrderHeader>> GetPurchaseOrderHeadersAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesOrderDetail>> GetSalesOrderDetailsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesOrderHeader>> GetSalesOrderHeadersAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesOrderHeaderSalesReason>> salesOrderHeaderSalesReasonsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesPerson>> GetSalesPersonsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesPersonQuotaHistory>> SalesPersonQuotaHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesReason>> GetSalesReasonsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesTaxRate>> GetSalesTaxRatesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesTerritory>> GetSalesTerritoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesTerritoryHistory>> GetSalesTerritoryHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ScrapReason>> GetScrapReasonsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Shift>> GetShiftsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ShipMethod>> GetShipMethodsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ShoppingCartItem>> GetShoppingCartItemsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SpecialOffer>> GetSpecialOffersAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SpecialOfferProduct>> GetSpecialOfferProductsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<StateProvince>> GetStateProvincesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Store>> GetStoresAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<TransactionHistory>> GetTransactionHistoriesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<TransactionHistoryArchive>> GetTransactionHistoryArchivesAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<UnitMeasure>> GetUnitMeasuresAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Vendor>> GetVendorsAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<WorkOrder>> GetWorkOrdersAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<WorkOrderRouting>> GetWorkOrderRoutingsAsync(CancellationToken cancellationToken);
     }
 }

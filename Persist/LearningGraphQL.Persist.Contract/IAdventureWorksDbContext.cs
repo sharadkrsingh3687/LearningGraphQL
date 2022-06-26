@@ -18,6 +18,7 @@ namespace LearningGraphQL.Persist.Contract
         DbSet<CreditCard> CreditCard { get; }
         DbSet<Culture> Culture { get; }
         DbSet<Currency> Currency { get; }
+        DbSet<CurrencyRate> CurrencyRate { get; }
         DbSet<Customer> Customer { get; }
         DbSet<Department> Department { get; }
         DbSet<EmailAddress> EmailAddress { get; }
