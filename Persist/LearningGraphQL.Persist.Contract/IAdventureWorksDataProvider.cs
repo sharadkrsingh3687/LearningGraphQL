@@ -49,6 +49,7 @@ namespace LearningGraphQL.Persist.Contract
         Task<IEnumerable<PurchaseOrderHeader>> GetPurchaseOrderHeadersAsync(CancellationToken cancellationToken);
         Task<IEnumerable<SalesOrderDetail>> GetSalesOrderDetailsAsync(CancellationToken cancellationToken);
         Task<IEnumerable<SalesOrderHeader>> GetSalesOrderHeadersAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<SalesOrderHeaderSalesReason>> GetSalesOrderHeaderSalesReasonsAsync(CancellationToken cancellationToken);
         Task<IEnumerable<SalesOrderHeaderSalesReason>> salesOrderHeaderSalesReasonsAsync(CancellationToken cancellationToken);
         Task<IEnumerable<SalesPerson>> GetSalesPersonsAsync(CancellationToken cancellationToken);
         Task<IEnumerable<SalesPersonQuotaHistory>> SalesPersonQuotaHistoriesAsync(CancellationToken cancellationToken);

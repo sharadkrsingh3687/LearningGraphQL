@@ -213,5 +213,7 @@ namespace LearningGraphQL.Persist
         public async Task<IEnumerable<TransactionHistoryArchive>> GetTransactionHistoryArchivesAsync(CancellationToken cancellationToken)
             => await GetListDataAsync<TransactionHistoryArchive>(cancellationToken).ConfigureAwait(false);
 
+        public async Task<IEnumerable<SalesOrderHeaderSalesReason>> GetSalesOrderHeaderSalesReasonsAsync(CancellationToken cancellationToken)
+            => await GetListDataAsync<SalesOrderHeaderSalesReason>(cancellationToken).ConfigureAwait(false);
     }
 }
