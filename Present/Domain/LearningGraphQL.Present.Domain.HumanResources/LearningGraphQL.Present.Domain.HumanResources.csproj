@@ -6,4 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.1.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Business\LearningGraphQL.Business.Contract\LearningGraphQL.Business.Contract.csproj" />
+    <ProjectReference Include="..\..\..\Business\LearningGraphQL.Business\LearningGraphQL.Business.csproj" />
+    <ProjectReference Include="..\..\..\Framework\LearningGraphQL.Framework.Common\LearningGraphQL.Framework.Common.csproj" />
+    <ProjectReference Include="..\..\..\Persist\LearningGraphQL.Persist.Contract\LearningGraphQL.Persist.Contract.csproj" />
+    <ProjectReference Include="..\..\..\Persist\LearningGraphQL.Persist\LearningGraphQL.Persist.csproj" />
+  </ItemGroup>
+
 </Project>

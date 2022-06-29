@@ -21,15 +21,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningGraphQL.Persist", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningGraphQL.Persist.Contract", "Persist\LearningGraphQL.Persist.Contract\LearningGraphQL.Persist.Contract.csproj", "{E8803530-BC4E-4D7F-AE3E-92EE1B2ED1F2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persent", "Persent", "{FD77BCBA-926F-4412-B00E-B13DEA79AA15}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Present", "Present", "{FD77BCBA-926F-4412-B00E-B13DEA79AA15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningGraphQL.Present.Domain.HumanResources", "Present\Domain\LearningGraphQL.Present.Domain.HumanResources\LearningGraphQL.Present.Domain.HumanResources.csproj", "{689A4453-E963-46FD-88AF-1026F5E2BD03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningGraphQL.Present.Domain.HumanResources", "Present\Domain\LearningGraphQL.Present.Domain.HumanResources\LearningGraphQL.Present.Domain.HumanResources.csproj", "{689A4453-E963-46FD-88AF-1026F5E2BD03}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D055FC21-382E-48B1-A73C-56D34E3D7741}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{E46E1DB9-E931-4396-95EF-8F4C3512181C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningGraphQL.Present.Gateway", "Present\Gateway\LearningGraphQL.Present.Gateway\LearningGraphQL.Present.Gateway.csproj", "{440F0BC1-4064-4731-98F1-347C678E063F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningGraphQL.Present.Gateway", "Present\Gateway\LearningGraphQL.Present.Gateway\LearningGraphQL.Present.Gateway.csproj", "{440F0BC1-4064-4731-98F1-347C678E063F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningGraphQL.Framework.Common", "Framework\LearningGraphQL.Framework.Common\LearningGraphQL.Framework.Common.csproj", "{AEC9584F-5021-4E47-B495-15B011ACDAB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{440F0BC1-4064-4731-98F1-347C678E063F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440F0BC1-4064-4731-98F1-347C678E063F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440F0BC1-4064-4731-98F1-347C678E063F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC9584F-5021-4E47-B495-15B011ACDAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC9584F-5021-4E47-B495-15B011ACDAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC9584F-5021-4E47-B495-15B011ACDAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC9584F-5021-4E47-B495-15B011ACDAB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{D055FC21-382E-48B1-A73C-56D34E3D7741} = {FD77BCBA-926F-4412-B00E-B13DEA79AA15}
 		{E46E1DB9-E931-4396-95EF-8F4C3512181C} = {FD77BCBA-926F-4412-B00E-B13DEA79AA15}
 		{440F0BC1-4064-4731-98F1-347C678E063F} = {E46E1DB9-E931-4396-95EF-8F4C3512181C}
+		{AEC9584F-5021-4E47-B495-15B011ACDAB6} = {4390C5E9-A7A3-4CED-B622-57C39B2CAF32}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8630933-6E14-471A-A9F1-ADDE3FF36655}

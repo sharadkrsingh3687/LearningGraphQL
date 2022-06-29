@@ -45,6 +45,5 @@ namespace LearningGraphQL.Business.Services
             var resultSet = await _dataProvider.GetEmployeePayHistoriesAsync(cancellationToken).ConfigureAwait(false);
             return this._mapper.Map<IEnumerable<EmployeePayHistory>, IEnumerable<EmployeePayHistoryResponse>>(resultSet);
         }
-
     }
 }
